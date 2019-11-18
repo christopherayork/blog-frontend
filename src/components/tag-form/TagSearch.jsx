@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Input, Button, Icon } from 'semantic-ui-react';
+import TagSearchStyled from "./styles";
 
 const TagSearch = () => {
   const [search, setSearch] = useState('');
@@ -16,7 +17,7 @@ const TagSearch = () => {
   };
 
   return (
-    <>
+    <TagSearchStyled>
       <Input
         icon='tags'
         iconPosition='left'
@@ -29,7 +30,7 @@ const TagSearch = () => {
       <Button icon onClick={handleSubmit}>
         <Icon name='search' />
       </Button>
-    </>
+    </TagSearchStyled>
   )
 };
 
