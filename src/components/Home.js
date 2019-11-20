@@ -1,12 +1,12 @@
 import React from 'react';
+import PostsList from './posts/PostsList';
+import Navigation from "../components/navigation/Navigation";
 
 const Home = props => {
-
-
-
   return (
     <>
-      Test Home
+      <Navigation {...props} />
+      <PostsList {...props} />
     </>
   );
 };

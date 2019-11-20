@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
-import Navigation from "../components/navigation/Navigation";
 
 import Home from '../components/Home';
 import About from "../components/About";
@@ -12,7 +11,6 @@ const Router = props => {
   return (
     <>
       <BrowserRouter>
-        <Navigation />
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
         <Route exact path='/contact' component={Contact} />

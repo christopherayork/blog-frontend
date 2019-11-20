@@ -6,7 +6,6 @@ import NavStyled from "./styles";
 
 const Navigation = props => {
 
-
   return (
     <NavStyled>
       <div className='links'>
@@ -14,7 +13,7 @@ const Navigation = props => {
         <Link to='/about'><Icon name='id card' size='large' /></Link>
         <Link to='/contact'><Icon name='envelope' size='large' /></Link>
       </div>
-      <TagSearch />
+      <TagSearch {...props} />
     </NavStyled>
   );
 };

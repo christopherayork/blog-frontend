@@ -6,13 +6,26 @@ const TagSearchStyled = styled.div`
   width: 350px;
   justify-content: space-evenly;
   
+  @media (max-width: 320px) {
+    width: 320px;
+  }
+  
   .input {
-    //margin-right: 5px;
+    
+    @media (max-width: 320px) {
+      
+    }
    
   }
   
   button {
     height: 100%;
+    
+    @media (max-width: 320px) {
+      height: 38px;
+      padding: 0;
+      z-index: 2;
+    }
     
   }
 `;

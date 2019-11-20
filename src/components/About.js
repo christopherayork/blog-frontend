@@ -1,11 +1,14 @@
 import React from 'react';
+import Navigation from "../components/navigation/Navigation";
 
-
-const About = () => {
+const About = (props) => {
   return (
-    <div className='about-container'>
-      Some stuff
-    </div>
+    <>
+      <Navigation {...props} />
+      <div className='about-container'>
+        Some stuff
+      </div>
+    </>
   );
 };
 

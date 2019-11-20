@@ -1,11 +1,15 @@
 import React from 'react';
+import Navigation from "./navigation/Navigation";
 
-const Contact = () => {
+const Contact = (props) => {
 
   return (
-    <div className='contact-container'>
-      Contact info here
-    </div>
+    <>
+      <Navigation {...props} />
+      <div className='contact-container'>
+        Contact info here
+      </div>
+    </>
   );
 };
 
