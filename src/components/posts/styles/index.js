@@ -34,10 +34,16 @@ const ListStyled = styled.div`
       padding: 10px;
       box-sizing: border-box;
       background: #FEFEFE;
-      border-radius: 5px;
+      //border-radius: 5px;
       //margin-bottom: 15px;
       margin: 0 0.5% 15px 0.5%;
       width: 32%;
+      transition: transform 0.5s;
+      box-shadow: #AAA 0 4px 8px;
+      
+      &:hover {
+        transform: scale(1.02);
+      }
       
       @media (max-width: 800px) {
         width: 80%;
@@ -70,6 +76,14 @@ const ListStyled = styled.div`
         height: 20px;
         margin-bottom: 10px;
         margin-top: -5px;
+        
+        a {
+          margin-right: 5px;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
       
       div.post-content {
