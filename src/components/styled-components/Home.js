@@ -1,7 +1,19 @@
-import styled from 'styled-components';
+import React, { useState, useEffect } from 'react';
+import { HomeStyles } from './styles';
 
-const HomeStyles = styled.div`
+const Home = props => {
+  const [posts, setPosts] = useState([]);
 
-`;
+  useEffect(() => {
+    // do axios stuff in here
+  }, []);
 
-export default HomeStyles
+  return (
+    <HomeStyles>
+
+    </HomeStyles>
+  );
+};
+
+export default Home;
+

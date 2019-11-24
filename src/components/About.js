@@ -1,14 +1,15 @@
 import React from 'react';
-import PostsList from './posts/PostsList';
 import Navigation from "../components/navigation/Navigation";
 
-const Home = props => {
+const About = (props) => {
   return (
     <>
       <Navigation {...props} />
-      <PostsList {...props} />
+      <div className='about-container'>
+        Some stuff
+      </div>
     </>
   );
 };
 
-export default Home;
+export default About;
