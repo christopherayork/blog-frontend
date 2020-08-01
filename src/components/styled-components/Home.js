@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HomeStyles } from './styles';
+import { HomeStyles } from '../styles';
 
 const Home = props => {
   const [posts, setPosts] = useState([]);
